@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
     "December",
   ];
 
-  const targetDay = 7;
-  const targetMonthIndex = 11; // December
-  const targetYear = 2024;
-  const birthYear = 2001;
+  const targetDay = 13;
+  const targetMonthIndex = 6; // December
+  const targetYear = 2026;
+  const birthYear = 2006;
 
   let currentDay = 1;
   let currentMonthIndex = 0;
@@ -122,7 +122,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10,
       },
-      "+=3.5"
+      "+=3.5",
     )
     .to(
       ".two",
@@ -131,7 +131,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10,
       },
-      "-=1"
+      "-=1",
     )
     .from(".three", 0.7, {
       opacity: 0,
@@ -144,7 +144,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10,
       },
-      "+=3"
+      "+=3",
     )
     .from(".four", 0.7, {
       scale: 0.2,
@@ -160,7 +160,7 @@ const animationTimeline = () => {
       {
         visibility: "visible",
       },
-      0.05
+      0.05,
     )
     .to(
       ".fake-btn",
@@ -168,7 +168,7 @@ const animationTimeline = () => {
       {
         backgroundColor: "rgb(127, 206, 248)",
       },
-      "+=4"
+      "+=4",
     )
     .to(
       ".four",
@@ -178,7 +178,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: -150,
       },
-      "+=1"
+      "+=1",
     )
     .from(".idea-1", 0.7, ideaTextTrans)
     .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
@@ -205,7 +205,7 @@ const animationTimeline = () => {
         z: 10,
         opacity: 0,
       },
-      "+=1.5"
+      "+=1.5",
     )
     .to(
       ".idea-5 span",
@@ -214,7 +214,7 @@ const animationTimeline = () => {
         rotation: 90,
         x: 8,
       },
-      "+=1.4"
+      "+=1.4",
     )
     .to(
       ".idea-5",
@@ -223,7 +223,7 @@ const animationTimeline = () => {
         scale: 0.2,
         opacity: 0,
       },
-      "+=2"
+      "+=2",
     )
     .staggerFrom(
       ".idea-6 span",
@@ -234,7 +234,7 @@ const animationTimeline = () => {
         rotation: 15,
         ease: Expo.easeOut,
       },
-      0.2
+      0.2,
     )
     .staggerTo(
       ".idea-6 span",
@@ -246,7 +246,7 @@ const animationTimeline = () => {
         ease: Expo.easeOut,
       },
       0.2,
-      "+=1.5"
+      "+=1.5",
     )
     .staggerFromTo(
       ".baloons img",
@@ -259,7 +259,7 @@ const animationTimeline = () => {
         opacity: 1,
         y: -1000,
       },
-      0.2
+      0.2,
     )
     .from(
       ".profile-picture",
@@ -271,7 +271,7 @@ const animationTimeline = () => {
         y: -25,
         rotationZ: -45,
       },
-      "-=2"
+      "-=2",
     )
     .from(".hat", 0.5, {
       x: -100,
@@ -290,7 +290,7 @@ const animationTimeline = () => {
         skewX: "30deg",
         ease: Elastic.easeOut.config(1, 0.5),
       },
-      0.1
+      0.1,
     )
     .staggerFromTo(
       ".wish-hbd span",
@@ -306,7 +306,7 @@ const animationTimeline = () => {
         ease: Expo.easeOut,
       },
       0.1,
-      "party"
+      "party",
     )
     .from(
       ".wish h5",
@@ -316,7 +316,7 @@ const animationTimeline = () => {
         y: 10,
         skewX: "-15deg",
       },
-      "party"
+      "party",
     )
     .staggerTo(
       ".eight svg",
@@ -328,7 +328,7 @@ const animationTimeline = () => {
         repeat: 3,
         repeatDelay: 1.4,
       },
-      0.3
+      0.3,
     )
     .to(".six", 0.5, {
       opacity: 0,
@@ -342,7 +342,7 @@ const animationTimeline = () => {
       {
         rotation: 90,
       },
-      "+=1"
+      "+=1",
     );
 
   // Restart Animation on click
